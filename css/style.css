@@ -2,16 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: #f4f6f9;
+  background: linear-gradient(to top, rgb(128, 126, 114), rgb(61, 104, 212));
 }
-html, body {
+
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -19,7 +21,7 @@ html, body {
 /* ================= HEADER ================= */
 
 .main-header {
-  background: #36485b;
+  background: #003f82;
   color: white;
   padding: 15px 20px;
 }
@@ -88,7 +90,7 @@ main {
   background: white;
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
   text-align: center;
 }
@@ -108,13 +110,16 @@ main {
   margin-top: 10px;
   padding: 8px 12px;
   border: none;
-  background: #d31cd3;
+  background: #333dfc;
   color: white;
   border-radius: 6px;
   cursor: pointer;
 }
-.product button:hover{
-    background: #dc2ddc;
+
+.product button:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background: #000dff;
 }
 
 /* ================= CART DRAWER ================= */
@@ -164,7 +169,7 @@ main {
 }
 
 .remove-btn {
-  background: red;
+  background: rgb(177, 0, 0);
   border: none;
   color: white;
   padding: 5px 8px;
@@ -181,18 +186,12 @@ main {
   border-radius: 6px;
   margin-top: 15px;
 }
-.checkout-btn:hover{
-    background: rgb(46, 43, 43);
+
+.checkout-btn:hover {
+  background: rgb(46, 43, 43);
 }
 
-/* ================= FOOTER ================= */
-footer {
-  background: #36485bc6;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: auto;
-}
+
 /* ================= RESPONSIVE BREAKPOINTS ================= */
 
 /* Tablets */
@@ -202,7 +201,7 @@ footer {
   }
 }
 
-/* ================= IMPROVED MOBILE ================= */
+/* ================= MOBILE ================= */
 @media (max-width: 600px) {
 
   body {
@@ -254,6 +253,7 @@ footer {
   }
 
 }
+
 /* ================= CHECKOUT PAGE ================= */
 
 .checkout-container {
@@ -278,7 +278,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 1px solid #851616;
+  border-bottom: 1px solid #942323;
 }
 
 .checkout-summary {
@@ -308,4 +308,104 @@ footer {
     margin: 20px;
     padding: 20px;
   }
+}
+
+/* AUTH PAGES */
+
+.auth-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #36485b, #5f7fa1);
+}
+
+.auth-card {
+  background: white;
+  padding: 40px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: #36485b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  background: #2b3846;
+}
+
+/* Header Button */
+
+#auth-btn {
+  padding: 8px 15px;
+  background: #ef7f16;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#auth-btn:hover {
+  background: #d86e0d;
+}
+
+/* Fix Footer */
+
+footer {
+  background: #36485b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+/* Product Not Found */
+
+.not-found {
+  text-align: center;
+  width: 100%;
+  padding: 50px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.not-found h2 {
+  color: #36485b;
+  margin-bottom: 10px;
+}
+
+.not-found p {
+  color: #777;
+}
+
+/* Footer */
+
+footer {
+  background: #353156;
+  color: white;
+  text-align: center;
+  font-family: monospace;
+  padding: 15px;
+  margin-top: 30px;
 }
