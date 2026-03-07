@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: linear-gradient(to top, rgb(185, 185, 185), rgb(84, 84, 84));
+  background: linear-gradient(to top, rgb(255, 255, 255), rgb(31, 40, 37));
 }
 
 html,
@@ -39,7 +39,7 @@ body {
   cursor: pointer;
 }
 .logo:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .logo a{
   color: white;
@@ -50,6 +50,10 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+#cart-count{
+  color: white;
+  font-weight: bold;
 }
 
 .menu-btn {
@@ -82,7 +86,7 @@ body {
   cursor: pointer;
 }
 
-/* ================= PRODUCTS ================= */
+/* PRODUCTS */
 
 main {
   flex: 1;
@@ -131,7 +135,7 @@ main {
   background: #000dff;
 }
 
-/* ================= CART DRAWER ================= */
+/* CART DRAWER */
 
 .cart-drawer {
   position: fixed;
@@ -141,7 +145,7 @@ main {
   max-width: 100%;
   height: 70%;
   background: white;
-  box-shadow: -3px 0 15px rgba(72, 41, 41, 0.2);
+  box-shadow: -3px 0 15px rgba(2, 22, 246, 0.2);
   padding: 20px;
   transition: right 0.3s ease;
   overflow-y: auto;
@@ -157,11 +161,16 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+.cart-header button{
+  width: 10%;
+  
+}
 
 .cart-item {
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
 }
+
 
 .qty-controls {
   display: flex;
@@ -178,7 +187,7 @@ main {
 }
 
 .remove-btn {
-  background: rgb(177, 0, 0);
+  background: rgb(252, 0, 0);
   border: none;
   color: white;
   padding: 5px 8px;
@@ -189,7 +198,7 @@ main {
 .checkout-btn {
   width: 100%;
   padding: 10px;
-  background: rgb(0, 0, 0);
+  background: rgb(40, 2, 250);
   color: white;
   border: none;
   border-radius: 6px;
@@ -197,11 +206,11 @@ main {
 }
 
 .checkout-btn:hover {
-  background: rgb(46, 43, 43);
+  background: rgb(103, 118, 255);
 }
 
 
-/* ================= RESPONSIVE BREAKPOINTS ================= */
+/* RESPONSIVE BREAKPOINTS */
 
 /* Tablets */
 @media (max-width: 992px) {
@@ -210,7 +219,7 @@ main {
   }
 }
 
-/* ================= MOBILE ================= */
+/*  MOBILE */
 @media (max-width: 600px) {
 
   body {
@@ -259,13 +268,16 @@ main {
   .checkout-container {
     margin: 20px;
     padding: 20px;
+    
   }
 
 }
 
-/* ================= CHECKOUT PAGE ================= */
+/*  CHECKOUT PAGE  */
 
 .checkout-container {
+  width: 40%;
+  height: 80vh;
   max-width: 700px;
   margin: 60px auto;
   background: white;
@@ -326,7 +338,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #36485b, #5f7fa1);
+  background: linear-gradient(to top, rgb(255, 255, 255), rgb(31, 40, 37));
 }
 
 .auth-card {
@@ -379,15 +391,6 @@ main {
   background: #d86e0d;
 }
 
-/* Fix Footer */
-
-footer {
-  background: #36485b;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 30px;
-}
 /* Product Not Found */
 
 .not-found {
@@ -411,10 +414,15 @@ footer {
 /* Footer */
 
 footer {
-  background: #353156;
-  color: white;
+  background: #212023;
+  color: #ccfa00;
   text-align: center;
   font-family: monospace;
   padding: 15px;
   margin-top: 30px;
+}
+
+#mail a{
+  color: white;
+  text-decoration: none;
 }
